@@ -5,17 +5,12 @@
 </p>
 </h1>
 
-
-<p align="justify">biniou is a self-hosted webui for several kinds of GenAI (generative artificial intelligence). You can generate multimedia contents with AI and use a chatbot on your own computer, even without dedicated GPU and starting from 8GB RAM. Can work offline (once deployed and required models downloaded).</p>
+<p align="justify">biniou is a self-hosted web UI for various types of GenAI (generative artificial intelligence). You can generate multimedia content with AI and use a chatbot on your own computer, even without a dedicated GPU and starting from 8GB RAM. It can work offline (once deployed and the required models are downloaded).</p>
 
 <p align="center">
 <a href="#GNULinux">GNU/Linux</a> [ <a href="#OpenSUSE-Leap-155--OpenSUSE-Tumbleweed">OpenSUSE base</a> | <a href="#Rocky-93--Alma-93--CentOS-Stream-9">RHEL base</a> | <a href="#debian-12--ubuntu-22043--ubuntu-2404--linux-mint-212">Debian base</a> ] • <a href="#windows-10--windows-11">Windows</a> • <a href="#macos-intel-homebrew-install">macOS Intel (experimental)</a> • <a href="#dockerfile">Docker</a></br>
 <a href="https://github.com/Woolverine94/biniou/wiki">Documentation ❓</a> | <a href="https://github.com/Woolverine94/biniou/wiki/Showroom">Showroom 🖼️</a>
 </p>
-
----
-
-<p align="center">⚠️ To anyone who wants to contribute to this project : please note that PR for typos, grammar, mispelled words in documentation/README.md and code not significantly contributing to the project won't be taken into account anymore and will be rejected as there's way too much of them. ⚠️<br /><br />I'm bad at writing a fluent and correct English : deal with it ! </p>
 
 ---
 
@@ -41,23 +36,23 @@
     - Support for SD 1.5 model [digiplay/PerfectDeliberate_v5](https://hf.co/digiplay/PerfectDeliberate_v5) to Stable Diffusion-based modules.
     - Change of default SDXL LoRA model variant for [ByteDance/Hyper-SD](https://hf.co/ByteDance/Hyper-SD).
 
-  * 🆕 **2024-09-22** : 🔥 ***Enhancement of models lists for some modules*** 🔥 > Handling of local models (manually downloaded .safetensors and .gguf models) is now modified for Stable Diffusion-based modules, Chatbot and LoRAs models. These models are now listed at the bottom of models lists, in the "Local models" category, instead of being at the top of these lists.
+  * 🆕 **2024-09-22** : 🔥 ***Enhancement of models lists for some modules*** 🔥 > Handling of local models (manually downloaded .safetensors and .gguf models) is now modified for Stable Diffusion-based modules, Chatbot, and LoRA models. These models are now listed at the bottom of models lists, in the "Local models" category, instead of being at the top of these lists.
 
   * 🆕 **2024-09-21** : 🔥 ***This week's updates*** 🔥 >
     - Support for High-end Chatbot model [bartowski/Mistral-Small-Instruct-2409-GGUF](https://hf.co/bartowski/Mistral-Small-Instruct-2409-GGUF).
-    - Support for SDXL Fast models [stablediffusionapi/dream-diffusion-lightning](https://hf.co/stablediffusionapi/dream-diffusion-lightning), [John6666/comradeship-xl-v9a-spo-dpo-flash-sdxl](https://hf.co/John6666/comradeship-xl-v9a-spo-dpo-flash-sdxl) and SDXL anime model [GraydientPlatformAPI/sanae-xl](https://hf.co/GraydientPlatformAPI/sanae-xl) to Stable Diffusion-based module.
-    - Support for SD3 Fast LoRA model [ByteDance/Hyper-SD](https://hf.co/ByteDance/Hyper-SD). You can now generate images with SD3 using only 4 steps instead of 20 !
-    - Support for SDXL LoRA model [GraydientPlatformAPI/spiderman-sdxl](https://hf.co/GraydientPlatformAPI/spiderman-sdxl)
-    - Add support for multiple LoRAs (up to 5) to LCM module. All eligible modules can now use multiple LoRAs
+    - Support for SDXL Fast models [stablediffusionapi/dream-diffusion-lightning](https://hf.co/stablediffusionapi/dream-diffusion-lightning), [John6666/comradeship-xl-v9a-spo-dpo-flash-sdxl](https://hf.co/John6666/comradeship-xl-v9a-spo-dpo-flash-sdxl), and SDXL anime model [GraydientPlatformAPI/sanae-xl](https://hf.co/GraydientPlatformAPI/sanae-xl) to Stable Diffusion-based module.
+    - Support for SD3 Fast LoRA model [ByteDance/Hyper-SD](https://hf.co/ByteDance/Hyper-SD). You can now generate images with SD3 using only 4 steps instead of 20!
+    - Support for SDXL LoRA model [GraydientPlatformAPI/spiderman-sdxl](https://hf.co/GraydientPlatformAPI/spiderman-sdxl).
+    - Add support for multiple LoRAs (up to 5) to LCM module. All eligible modules can now use multiple LoRAs.
     - Bugfix in multi LoRAs for incompatible LoRA models.
 
   * 🆕 **2024-09-14** : 🔥 ***This week's updates*** 🔥 >
     - Support for Chatbot models [mradermacher/reflection-llama-3.1-8B-Solshine-Full-GGUF](https://hf.co/mradermacher/reflection-llama-3.1-8B-Solshine-Full-GGUF) and [bartowski/Nemotron-Mini-4B-Instruct-GGUF](https://hf.co/bartowski/Nemotron-Mini-4B-Instruct-GGUF) to Chatbot module.
     - Support for SDXL model [misri/juggernautXL_juggXIByRundiffusion](https://hf.co/misri/juggernautXL_juggXIByRundiffusion) to Stable Diffusion-based module.
-    - Add support for multiple LoRAs (up to 5) to Img2img, IP-Adapter and ControlNet modules.
-    - Bugfixes for metadatas in Photobooth module, incorrect LoRA models cache dir location and immutable safety checker with local safetensors models in image modules.
+    - Add support for multiple LoRAs (up to 5) to Img2img, IP-Adapter, and ControlNet modules.
+    - Bugfix for potentially hanging the app when loading invalid LoRA models.
 
-[List of archived updates](https://github.com/Woolverine94/biniou/wiki/Updates-archive)
+> [List of archived updates](https://github.com/Woolverine94/biniou/wiki/Updates-archive)
 
 ---
 
@@ -189,7 +184,7 @@
     - Windows 11 22H2
     - macOS ???
 
-><u>Note :</u> biniou supports Cuda or ROCm but does not require a dedicated GPU to run. You can install it in a virtual machine.
+><u>Note :</u> biniou support Cuda or ROCm but does not require a dedicated GPU to run. You can install it in a virtual machine.
 
 ---
 
@@ -274,7 +269,7 @@ Windows installation has more prerequisites than GNU/Linux one, and requires fol
 ***<p align=left>OR</p>***
   - **Download and execute**  : [install_win.cmd](https://raw.githubusercontent.com/Woolverine94/biniou/main/install_win.cmd) *(right-click on the link and select "Save Target/Link as ..." to download)*<br/>
 
-All the installation is automated, but Windows UAC will ask you for confirmation for each software installed during the "prerequisites" phase. You can avoid this by running the chosen installer as administrator.
+All the installation is automated, but Windows UAC will ask you confirmation for each software installed during the "prerequisites" phase. You can avoid this by running the chosen installer as administrator.
 
 ⚠️ Since commit [8d2537b](https://github.com/Woolverine94/biniou/commit/8d2537b2de823e522602174ca23ab40e94b6c4d2) Windows users can now define a custom path for biniou directory, when installing with `install_win.cmd` ⚠️
 
@@ -282,7 +277,7 @@ Proceed as follow :
   - Download and edit install_win.cmd
   - Modify `set DEFAULT_BINIOU_DIR="%userprofile%"` to `set DEFAULT_BINIOU_DIR="E:\datas\somedir"` (for example)
   - Only use absolute path (e.g.: `E:\datas\somedir` and not `.\datas\somedir`)
-  - Don't add a trailing slash (e.g.: `E:\datas\somedir` and not `E:\datas\somedir\` )
+  - Don't had a trailing slash (e.g.: `E:\datas\somedir` and not `E:\datas\somedir\` )
   - Don't add a "biniou" suffix to your path (e.g.: `E:\datas\somedir\biniou`), as the biniou directory will be created by the git clone command
   - Save and launch install_win.cmd
 
@@ -403,15 +398,15 @@ You can also access biniou from any device (including smartphones) on the same L
 
 * biniou natively only rely on CPU for all operations. It use a specific CPU-only version of PyTorch. The result is a better compatibility with a wide range of hardware, but degraded performances. Depending on your hardware, expect slowness. See [here](#cuda-support) for Nvidia CUDA support and AMD ROCm experimental support (GNU/Linux only).
 
-* Defaults settings are selected to permit generation of contents on low-end computers, with the best ratio performance/quality. If you have a configuration above the minimal settings, you could try using other models, increasing media dimensions or duration, modifying inference parameters or other settings (like token merging for images) to obtain better quality contents.
+* Defaults settings are selected to permit generation of contents on low-end computers, with the best ratio performance/quality. If you have a configuration above the minimal settings, you could try using other models, increase media dimensions or duration, modify inference parameters or others settings (like token merging for images) to obtain better quality contents.
 
 * biniou is licensed under GNU GPL3, but each model used in biniou has its own license. Please consult each model license to know what you can and cannot do with the models. For each model, you can find a link to the huggingface page of the model in the "About" section of the associated module.
 
-* Don't have too much expectations : biniou is in an early stage of development, and most open source software used in it are in development (some are still experimental).
+* Don't have too much expectations : biniou is in an early stage of development, and most open source software used in it are in development (some are still experimentals).
 
 * Every biniou modules offers 2 accordions elements **About** and **Settings** :
-  - **About** is a quick help feature that describes the module and gives instructions and tips on how to use it.
-  - **Settings** is a panel setting specific to the module that lets you configure the generation parameters.
+  - **About** is a quick help features that describes the module and give instructions and tips on how to use it.
+  - **Settings** is a panel setting specific to the module that let you configure the generation parameters.
 
 ---
 
